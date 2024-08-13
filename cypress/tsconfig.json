@@ -1,0 +1,23 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "**/*.ts",
+    "cypress/**/*.ts",
+    "cypress.config.ts",
+    "."
+  ],
+  "compilerOptions": {
+    "sourceMap": false,
+    "baseUrl": "./",
+    "target": "es5",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "types": [
+      "cypress",
+      "cypress-axe"
+    ]
+  },
+  "exclude": []
+}

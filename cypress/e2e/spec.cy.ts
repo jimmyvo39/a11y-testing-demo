@@ -1,5 +1,11 @@
 describe('The Home Page', () => {
-  it('successfully loads', () => {
+  beforeEach(()=>{
     cy.visit('/')
+    cy.injectAxe()
+    cy.wait(500)
+  })
+
+  it('run a11y', () => {
+    cy.checkA11y();
   })
 })

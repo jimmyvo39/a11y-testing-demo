@@ -1,0 +1,28 @@
+header {
+  background: aqua;
+  padding: 20px 40px;
+  text-align: center;
+  height: 15%;
+    .navigation-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+}
+
+main {
+  margin: 0 80px;
+  padding: 5px 80px;
+  min-height: 100%;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: aqua;
+  padding: 5px 40px;
+}
