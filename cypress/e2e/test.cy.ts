@@ -19,7 +19,10 @@ describe('navigate and check a11y', () => {
   })
 
   it('click non issue page button and and run a11y test', () => {
-    cy.get('button:contains("Page without Issues")').click();
+    cy.realPress('Tab')
+    cy.realPress('Tab')
+    cy.realPress('Tab')
+    cy.realPress('Enter')
     cy.wait(500);
 
     cy.url().should('include', '/without-issues');
