@@ -17,5 +17,20 @@ Run `npm run cy:open` to execute the end-to-end tests via Cypress
 ## Demo topics
 
 ### Using Chrome DevTools
-[identify color contrast](https://developer.chrome.com/docs/devtools/css/color#fix-contrast)
-[Full accessibility tree](https://developer.chrome.com/blog/full-accessibility-tree#full_accessibility_tree_in_devtools)
+- [identify color contrast](https://developer.chrome.com/docs/devtools/css/color#fix-contrast)
+  - compare color and text size
+- [Full accessibility tree](https://developer.chrome.com/blog/full-accessibility-tree#full_accessibility_tree_in_devtools)
+  - view dom as simplified nodes
+  - look for aria labels and titles
+  
+
+### Using Axe DevTools extension
+- run test on each page
+- open accordions and test again
+
+### using Axe-core with Cypress 
+- visit page to load DOM
+- inject axe-core library
+- navigate via query and click
+- navigate via keyboard
+- run test for open and closed accordion
